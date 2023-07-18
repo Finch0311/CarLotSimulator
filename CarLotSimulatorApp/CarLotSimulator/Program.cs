@@ -39,20 +39,20 @@ namespace CarLotSimulator
 
             chevy.MakeEngineNoise();
             chevy.MakeHonkNoise();
-
+            Console.WriteLine($"The number of cars inside the lot currently are : {CarLot.numberOfCars}");
 
             Car honda = new Car() { Year = 2007, Make = "Honda", Model = "Shadow Spirit", EngineNoise = "Waaaaahh", HonkNoise = "beep", IsDriveable = true };
             lot.CarList.Add(honda);
             honda.MakeEngineNoise();
             honda.MakeHonkNoise();
 
-
+            Console.WriteLine($"The number of cars inside the lot currently are : {CarLot.numberOfCars}");
             Car ford = new Car(2013, "Ford", "F150", "Rawr", "Aooogah", true);
             lot.CarList.Add(ford);
 
             ford.MakeEngineNoise();
             ford.MakeHonkNoise();
-
+            Console.WriteLine($"The number of cars inside the lot currently are : {CarLot.numberOfCars}");
             // Set the properties utilizing the 3 different ways we learned about, one way for each car         DONE
 
             //*************BONUS X 2*************//
